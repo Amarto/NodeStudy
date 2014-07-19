@@ -1,0 +1,10 @@
+{
+	"name"			: "NodeStudy",
+	"version"		: "0.0.1",
+	"description"	: "Teach Amarto to Node <3",
+	"private"		: true,
+	"dependencies"	: {
+		"express"	: "*"
+	}
+}
+
