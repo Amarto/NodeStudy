@@ -5,6 +5,10 @@ var express = require('express');
 
 var app = express();
 
+var engines = require('consolidate');
+app.set('views', __dirname + '/views');
+app.engine('html', engines.mustache);
+app.set('view engine', 'html');
 
 app.use("/", express.static(__dirname + "/public"));
 app.get('/hello', function(req, res){
